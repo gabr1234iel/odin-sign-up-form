@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="left-card">
+        <div class="logo-holder">
+            <div class="logo"><p>CASOS</p></div>
+            <div class="desc"><p>make your phone truly yours</p></div>
+        </div>
+        
+    </div>
+    <!-- action="./success.html" method="post" -->
+    <div class="right-card">
+        <div class="form-holder">
+            <form name="myForm"  class="form" onsubmit="return(validate());">
+                <p class="heading">Create your account now!</p>
+                <div class="row1" >
+                    <div class="first-name">
+                        <label for="first-name">FIRST NAME:</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">LAST NAME:</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="email">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone-no">PHONE:</label>
+                        <input type="tel" id="phone-no" name="phone_no" required>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="password">
+                        <label for="password">PASSWORD:</label>
+                        <input type="password" id="password" name="password" class="error" required>
+                    </div>
+                    <div class="confirmpassword">
+                        <label for="confirmpassword">CONFIRM PASSWORD:</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" class="error" required>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div class="submit">
+                        <button type="submit" onclick="submitForm(event)">CONTINUE</button>
+                    </div>
+                </div>
+                <p class="footer">Already have an account? <a href="./login.html">Sign in</a></p>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var password = document.getElementById("password");
+        var confirmpassword = document.getElementById("confirmpassword");
+
+        function validate() {
+            console.log(textContent);
+
+            if(password.textContent != confirmpassword.textContent){
+                alert("Passwords do not match!");
+                confirmpassword.focus();
+                return false;
+            }
+            
+            return (true);
+        }
+     </script>
+
+</body>
+</html>
