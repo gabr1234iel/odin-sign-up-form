@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="left-half">
+        <div class="centered">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="right-half">
+        <div class="centered-content">
+            <div class="desc">
+                <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up now to get started!</p>
+                <br>
+                <p>You know you want to.</p>
+            </div>
+        
+            <div class="form">
+                <form action="POST">
+                    <div class="wrapper">
+                        <h2>Let's do this !</h2>
+                        <div class="row one">
+                            <div class="first-name">
+                                <label for="first-name" id="first-name">FIRST NAME</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="last-name">
+                                <label for="last-name" id="last-name">LAST NAME</label><br>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="row two">
+                            <div class="email">
+                                <label for="email" id="email">EMAIL</label><br>
+                                <input type="email" required>
+                            </div>
+                            <div class="phone-number">
+                                <label for="phone-number" id="phone-number">PHONE NUMBER</label><br>
+                                <input type="tel" required>
+                            </div>
+                        </div>
+                        <div class="row three">
+                            <div class="password">
+                                <label for="password" id="password">PASSWORD</label><br>
+                                <input type="password" class="error" required>
+                            </div>
+                            <div class="confirm-password">
+                                <label for="confirm-password" id="confirm-password" >CONFIRM PASSWORD</label><br>
+                                <input type="password" class="error" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button id="create-account">Create Account</button>
+                    </div>
+                </form>
+                <p class="log-in-text">Already have an account? <a href="./login.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width:100vw;
+}
+
+.left-half {
+    background-image: url(img/federico-bottos-Z3NceSeZqgI-unsplash.jpg);
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .right-half {
+    background-color: rgb(245, 240, 240);
+    flex: 1;
+    padding: 1rem;
+  }
+
+.wrapper{
+    margin-top: 90px;
+    margin-bottom: 25px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.row{
+    display: flex;
+    gap: 40px;
+}
+
+button{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    padding: 10px 40px;
+    background-color: #3b4b21;
+    color: white;
+    border-radius: 7px;
+
+}
+
+.logo-background{
+    flex:1;
+    background-image: url('./img/federico-bottos-Z3NceSeZqgI-unsplash.jpg');
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(245, 240, 240);
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  /* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 400px;
+    border-radius: 50%;
+  }
+
+
+  /* .centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+
+  label{
+    font-size: 0.85rem;
+  }
+
+  a{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#3b4b21;
+  }
